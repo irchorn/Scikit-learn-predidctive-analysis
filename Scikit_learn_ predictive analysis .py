@@ -83,13 +83,6 @@ df_subset_mushrooms
 # In[9]:
 
 
-import pandas as pd
-from sklearn.preprocessing import LabelEncoder
-
-
-# In[12]:
-
-
 labelEncoder = LabelEncoder()
 df_subset_mushrooms_n = df_subset_mushrooms.apply(labelEncoder.fit_transform)
 
